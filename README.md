@@ -1,4 +1,4 @@
-# [Anotherplanet.io skpm template for sketch plugin](https://www.anotherplanet.io/)
+# (Anotherplanet.io skpm template for sketch plugin)[https://www.anotherplanet.io/]
 
 WIP disclaimer
 
