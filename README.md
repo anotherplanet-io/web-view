@@ -1,6 +1,7 @@
-# (Anotherplanet.io skpm template for sketch plugin)[https://www.anotherplanet.io/]
+# [Anotherplanet.io skpm template for sketch plugin](https://www.anotherplanet.io/)
 
-WIP disclaimer
+
+## WIP disclaimer
 
 Please be patient this project is at an early stage...
 
@@ -14,10 +15,11 @@ Please be patient this project is at an early stage...
 
 ``` bash
 $ npm install -g skpm
-$ skpm create my-plugin --template=skpm/with-prettier
+$ skpm create my-plugin --template=anotherplanet-io/web-view
 $ cd my-plugin
 $ npm run watch
 ```
+
 
 ### Fork It And Make Your Own
 
