@@ -1,0 +1,16 @@
+# build artefacts
+template/plugin.sketchplugin
+
+# npm
+node_modules
+.npm
+npm-debug.log
+
+# template
+template/node_modules
+template/.npm
+template/npm-debug.log
+template/package-lock.json
+
+# mac
+.DS_Store
