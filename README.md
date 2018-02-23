@@ -1,6 +1,5 @@
 # [Anotherplanet.io skpm template for sketch plugin](https://www.anotherplanet.io/)
 
-
 ## WIP disclaimer
 
 Please be patient this project is at an early stage...
