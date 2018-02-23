@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # [Anotherplanet.io skpm template for sketch plugin](https://www.anotherplanet.io/)
+=======
+# (Anotherplanet.io skpm template for sketch plugin)[https://www.anotherplanet.io/]
+>>>>>>> 8367a641569c330e447b833d1ebebd0112b3e344
 
 WIP disclaimer
 
