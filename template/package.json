@@ -7,8 +7,14 @@
   "skpm": {
     "name": "foobar",
     "manifest": "src/manifest.json",
-    "main": "plugin.sketchplugin"
+    "main": "plugin.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
   },
+  "resources": [
+    "webViewUI/index.js"
+  ],
   "scripts": {
     "build": "skpm-build",
     "watch": "skpm-build --watch",
@@ -20,22 +26,55 @@
   },
   "devDependencies": {
     "@skpm/builder": "^0.1.3",
+    "@skpm/extract-loader": "^1.0.1",
+    "babel-plugin-react-sketchapp-svg": "^1.0.0-beta4",
+    "css-loader": "^0.28.10",
     "eslint": "^4.8.0",
     "eslint-config-airbnb-base": "^12.0.2",
     "eslint-config-prettier": "^2.6.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-no-not-accumulator-reassign": "^0.1.0",
     "eslint-plugin-prettier": "^2.3.1",
+    "file-loader": "^1.1.9",
+    "html-loader": "^0.5.5",
     "lint-staged": "^4.2.3",
+    "node-sass": "^4.7.2",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.7.4"
+    "prettier": "^1.7.4",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.2",
+    "url-loader": "^0.6.2"
   },
-  "pre-commit": ["lint-staged"],
+  "pre-commit": [
+    "lint-staged"
+  ],
   "lint-staged": {
     "*.js": [
       "npm run prettier:base",
       "eslint --quiet --rule 'prettier/prettier: [\"error\", {\"trailingComma\": \"es5\", \"singleQuote\": true}]'",
       "git add"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-primitives": "^0.5.0",
+    "react-primitives-svg": "0.0.3",
+    "react-sketchapp": "^1.0.0",
+    "react-test-renderer": "^16.2.0",
+    "sketch-module-fetch-polyfill": "^0.1.4",
+    "sketch-module-web-view": "^0.2.6",
+    "uuid": "^3.2.1"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "babel-plugin-react-sketchapp-svg",
+        {
+          "defaultHeight": 16,
+          "defaultWidth": 16
+        }
+      ]
     ]
   }
 }
